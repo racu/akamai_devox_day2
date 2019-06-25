@@ -11,6 +11,6 @@ public class Solution3
         dyn[2] = BigInteger.valueOf(1);
         for(int i=3; i<=n; i++)
             dyn[i] = dyn[i-1].add(dyn[i-2]);
-        System.out.println(dyn[n]);
+        System.out.print(dyn[n]);
     }
 }
