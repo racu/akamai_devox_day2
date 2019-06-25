@@ -16,6 +16,8 @@ public class Solution1
         int countPal = 0;
         for(String word : words){
             boolean isPal = true;
+            if(word.length() == 0)
+                continue;
             for(int i=0 ; i < word.length()/2 + 1; i++)
                 if(word.charAt(i) != word.charAt(word.length() - 1 - i )) {
                     isPal = false;
@@ -24,7 +26,7 @@ public class Solution1
             if(isPal)
                 countPal++;
         }
-        System.out.println(countPal);
+        System.out.print(countPal);
 
 
     }
